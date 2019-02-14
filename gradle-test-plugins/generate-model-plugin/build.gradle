@@ -1,0 +1,22 @@
+apply plugin: 'scala'
+apply plugin: 'maven'
+
+dependencies {
+    compile gradleApi()
+    compile "org.scala-lang:scala-library:2.12.0"
+}
+
+repositories {
+    jcenter()
+}
+
+group = 'org.sample'
+version = '1.0'
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            repository(url: mavenLocal().url)
+        }
+    }
+} 

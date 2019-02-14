@@ -1,0 +1,3 @@
+rootProject.name = 'gradle-test'
+include 'gradle-test-module'
+include 'gradle-test-plugins:generate-model-plugin'
